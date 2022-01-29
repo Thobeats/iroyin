@@ -1,0 +1,76 @@
+*{
+    font-family: 'Manrope', sans-serif;
+}
+
+
+/* Index page */
+.nav-link{ 
+    color : #000;
+}
+
+.nav-link:hover{
+    color : #9b0e0e;
+}
+
+.th_img{
+    filter: contrast(120%);
+}
+
+.img_container {
+height: 100%; 
+background-size: contain; 
+background-repeat: no-repeat; 
+background-position: center top;
+}
+
+.read_more{
+    color : #ccc;
+    font-weight : 300;
+    transition: all ease-in 3s;
+    font-size : 13px;
+}
+
+.read_more:hover{
+    color : #ccc;
+    border-bottom : 1px solid #ccc;
+    text-decoration: none;
+    font-weight : 300;
+}
+
+.category_header{
+    color : #9b0e0e;
+    border-bottom : 1px solid #9b0e0e;
+    padding : 5px;
+}
+
+.card_source{
+    font-size : 13px;
+}
+
+footer{
+    background : #000;
+    height : fit-content;
+}
+
+.footer_logo{
+    width : 100%;
+}
+
+.footer_link{
+    list-style-type: none;
+}
+
+.footer_link>li{
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer_link>li>a{
+    color : #fff;
+    text-decoration: none;
+}
+/* end Index Page */
+
+
+
