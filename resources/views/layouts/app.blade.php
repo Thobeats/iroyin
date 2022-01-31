@@ -77,6 +77,7 @@
             <div class="row">
                 <div class="col-3">
                     <img src="/img/Iroyin_footer.png" alt="" class="footer_logo">
+                    <p class='text-center'>You want to know?</p>
                 </div>
 
                 <div class="col-3 text-light">
