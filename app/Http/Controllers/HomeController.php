@@ -15,6 +15,8 @@ class HomeController extends Controller
 
         $cc = $this->getCountryCode();
 
+        echo $cc;
+
         $data['title'] = 'Home';
         $data['cc'] = $cc;
 
