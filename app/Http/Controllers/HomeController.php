@@ -17,6 +17,7 @@ class HomeController extends Controller
 
         $data['title'] = 'Home';
         $data['cc'] = $cc;
+        $data['category'] = 'home';
 
         $api_key = '51ad14e1df1b4e11b48c7780e6160a4a';
 
@@ -119,6 +120,7 @@ class HomeController extends Controller
 
             $data['cards'] = $cards;
             $data['rests'] = $rests;
+            $data['category'] = $category;
 
             $data['category_headlines'] = $articles;
             $view = 'newsapp.' . $category;

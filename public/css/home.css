@@ -16,6 +16,9 @@
     filter: contrast(120%);
 }
 
+.carousel-item{
+    height : 90vh;
+}
 .img_container {
 height: 100%; 
 background-size: contain; 
@@ -69,6 +72,18 @@ footer{
 .footer_link>li>a{
     color : #fff;
     text-decoration: none;
+}
+
+@media screen and (max-width : 768px) {
+    .carousel-item{
+        height : 70vh;
+    }
+}
+
+@media screen and (max-width : 425px) {
+    .carousel-item{
+        height : 50vh;
+    }
 }
 /* end Index Page */
 

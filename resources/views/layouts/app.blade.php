@@ -13,32 +13,34 @@
         <title>Iroyin - @yield('title')</title>
     </head>
     <body>
+       
         <header class='border-bottom'>
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="{{ route('home') }}">
+                    <img class='header-logo' src="/img/Iroyin.png" width=100px >
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand" href="{{ route('home') }}">
-                        <img class='header-logo' src="/img/Iroyin.png" width=100px >
-                    </a>
+                  
                     <ul class="navbar-nav mr-auto mt-lg-1">
-                        <li class="nav-item active">
+                        <li class="nav-item {{ $category == 'home' ? 'active' : ''}}">
                             <a class="nav-link" href="{{ route('home') }}">All<span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{ $category == 'business' ? 'active' : ''}}">
                             <a class="nav-link" href="{{ route('news', ['category' => 'business', 'country' => $cc]) }}">Business </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{ $category == 'health' ? 'active' : ''}}">
                             <a class="nav-link" href="{{ route('news', ['category' => 'health', 'country' => $cc]) }}">Health</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{ $category == 'entertainment' ? 'active' : ''}}">
                             <a class="nav-link" href="{{ route('news', ['category' => 'entertainment', 'country' => $cc]) }}">Entertainment</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{ $category == 'sports' ? 'active' : ''}}">
                             <a class="nav-link" href="{{ route('news', ['category' => 'sports', 'country' => $cc]) }}">Sports</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{ $category == 'technology' ? 'active' : ''}}">
                             <a class="nav-link" href="{{ route('news', ['category' => 'technology', 'country' => $cc]) }}">Technology</a>
                         </li>
                         
@@ -55,16 +57,16 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12" style='background-color : #000;'>
+                <div class="col-lg-12" style='background-color : #000;'>
                   @yield('slider')
                 </div>
             </div>
 
             <div class="row mb-5">
-                <div class="col-9">
+                <div class="col-lg-9 col-md-8 col-sm-12">
                     @yield('content')
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-md-4 col-sm-12">
                     @yield('sidebar')
                 </div>
             </div>
@@ -75,12 +77,12 @@
         <footer class='p-3'>
 
             <div class="row">
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-12">
                     <img src="/img/Iroyin_footer.png" alt="" class="footer_logo">
                     <p class='text-center'>You want to know?</p>
                 </div>
 
-                <div class="col-3 text-light">
+                <div class="col-lg-3 col-md-4 col-sm-12 text-light">
                     <ul class='footer_link p-4'>
                         <li><a href="{{ route('home') }}" class="">All</a></li>
                         <li><a href="" class="">Business</a></li>
@@ -92,7 +94,7 @@
 
                 </div>
 
-                <div class="col-3 text-light">
+                <div class="col-lg-3 col-md-4 col-sm-12 text-light">
                     <ul class='footer_link p-4'>
                         <li><a href="{{ route('home') }}" class="">Video</a></li>
                         <li><a href="" class="">Archives</a></li>
@@ -100,7 +102,7 @@
                         <li><a href="" class="">Blog</a></li>
                     </ul>
                 </div>
-                <div class="col-3 d-flex flex-row">
+                <div class="col-lg-3 col-md-4 col-sm-12 d-flex flex-row">
                     <h6 class='p-2 mt-4 border-right border-light' style="height:fit-content; text-transform: uppercase; letter-spacing: 2px; color:grey;">follow us</h6>
                     <h6 class='p-2 mt-4 text-light'><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></h6>
                     <h6 class='p-2 mt-4 text-light'><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></h6>

@@ -11,7 +11,7 @@
   </ol>
   <div class="carousel-inner">
 @foreach($top_headlines as $key => $TH)
-    <div class="carousel-item {{ $key == 0 ? 'active' : '' }}" data-interval="2000" style='height: 90vh'>
+    <div class="carousel-item {{ $key == 0 ? 'active' : '' }}" data-interval="2000">
       <div class='img_container' style='background-image : linear-gradient(to bottom, rgba(0, 0, 0, 0.264), rgba(0, 0, 0, 0.264), rgba(0, 0, 0, 1)), url({{ $TH->urlToImage }});'>
         <div class="carousel-caption d-none d-md-block p-3 text-light text-left">
           <h3 class='text-bold'>
@@ -37,7 +37,7 @@
 
 <section class='p-3 mt-3'>
   <div class="row">
-    <div class="col-6 mt-3">
+    <div class="col-lg-6 col-sm-12 mt-3">
       <h5 class='category_header'>Business</h3>
 
   @foreach($business as $bus)
@@ -59,7 +59,7 @@
       </div>  
     @endforeach
     </div>
-    <div class="col-6 mt-3">
+    <div class="col-lg-6 col-sm-12 mt-3">
       <h5 class='category_header'>Health</h3>
 
       @foreach($health as $bus)
@@ -82,7 +82,7 @@
     @endforeach 
     </div>
 
-    <div class="col-6 mt-3">
+    <div class="col-lg-6 col-sm-12 mt-3">
       <h5 class='category_header'>Entertainment</h3>
 
       @foreach($entertainment as $bus)
@@ -105,7 +105,7 @@
     @endforeach 
     </div>
 
-    <div class="col-6 mt-3">
+    <div class="col-lg-6 col-sm-12 mt-3">
       <h5 class='category_header'>Sports</h3>
 
       @foreach($sports as $bus)
@@ -128,7 +128,7 @@
     @endforeach 
     </div>
 
-    <div class="col-6 mt-3">
+    <div class="col-lg-6 col-sm-12 mt-3">
       <h5 class='category_header'>Technology</h3>
 
       @foreach($technology as $bus)
