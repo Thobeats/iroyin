@@ -88,4 +88,57 @@ footer{
 /* end Index Page */
 
 
+/* Other Pages */
+
+.big_card{
+    height: 60vh; 
+    background-size : cover; 
+    background-position: left center;
+}
+
+.topcard{
+    height: 29vh; 
+    background-size : cover; 
+    background-position : center;
+}
+
+.restcard{
+    height: 25vh; 
+    background-size : cover; 
+    background-position : center center;
+}
+
+@media screen and (max-width : 768px) {
+    .big_card{
+        height: 70vh;   
+    }
+    
+    .topcard{
+        height: 35vh;    
+    }
+    
+    .restcard{
+        height: 35vh; 
+    }
+}
+
+@media screen and (max-width : 425px) {
+    .big_card{
+        height: 60vh;
+        background-position: center center;
+    }
+    
+    .topcard{
+        height: 40vh;
+    }
+    
+    .restcard{
+        height: 40vh; 
+    }
+}
+
+/* End Other Pages */
+
+
+
 

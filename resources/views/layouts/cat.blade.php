@@ -76,12 +76,12 @@
         <footer class='p-3'>
 
             <div class="row">
-                <div class="col-lg-3 col-sm-12">
+                <div class="col-lg-3 col-md-4 col-sm-12">
                     <img src="/img/Iroyin_footer.png" alt="" class="footer_logo">
                     <p class='text-center'>You want to know?</p>
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-12 text-light">
+                <div class="col-lg-3 col-md-4 col-sm-12 text-center text-light">
                     <ul class='footer_link p-4'>
                         <li><a href="{{ route('home') }}" class="">All</a></li>
                         <li><a href="" class="">Business</a></li>
@@ -93,7 +93,7 @@
 
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-12 text-light">
+                <div class="col-lg-3 col-md-4 col-sm-12 text-center text-light">
                     <ul class='footer_link p-4'>
                         <li><a href="{{ route('home') }}" class="">Video</a></li>
                         <li><a href="" class="">Archives</a></li>
@@ -101,7 +101,7 @@
                         <li><a href="" class="">Blog</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-12 d-flex flex-row">
+                <div class="col-lg-3 col-md-4 col-sm-12 d-flex flex-row justify-content-center">
                     <h6 class='p-2 mt-4 border-right border-light' style="height:fit-content; text-transform: uppercase; letter-spacing: 2px; color:grey;">follow us</h6>
                     <h6 class='p-2 mt-4 text-light'><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></h6>
                     <h6 class='p-2 mt-4 text-light'><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></h6>

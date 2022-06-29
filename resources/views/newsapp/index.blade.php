@@ -12,7 +12,7 @@
   <div class="carousel-inner">
 @foreach($top_headlines as $key => $TH)
     <div class="carousel-item {{ $key == 0 ? 'active' : '' }}" data-interval="2000">
-      <div class='img_container' style='background-image : linear-gradient(to bottom, rgba(0, 0, 0, 0.264), rgba(0, 0, 0, 0.264), rgba(0, 0, 0, 1)), url({{ $TH->urlToImage }});'>
+      <div class='img_container' style='background-image : linear-gradient(to bottom, rgba(0, 0, 0, 0.264), rgba(0, 0, 0, 0.264), rgba(0, 0, 0, 1)), url({{ $TH->urlToImage }}); background-position: top center; background-size:cover;'>
         <div class="carousel-caption d-none d-md-block p-3 text-light text-left">
           <h3 class='text-bold'>
             {{ $TH->title }}
